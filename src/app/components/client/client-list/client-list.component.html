@@ -1,0 +1,37 @@
+<div class="card home">
+    <div class="d-flex">
+        Não existem clientes cadastrados no momento!
+    </div>
+    <div class="card-header">
+        <h5 class="card-title">Clientes</h5>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">CPF</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">Rendimento Mensal</th>
+                <th scope="col">Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let cliente of clientes">
+                <td>{{ cliente.cpf }}</td>
+                <td>{{ cliente.nome }}</td>
+                <td>{{ cliente.telefone }}</td>
+                <td>{{ cliente.rendimentoMensal }}</td>
+                <td>
+                    <a class="btn btn-primary" [routerLink]="['/clientes', 'editar', cliente.cpf]">
+                        Editar
+                    </a>
+                    <a class="btn btn-danger" (click)="deleteCliente(cliente.cpf)">
+                        Excluir
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

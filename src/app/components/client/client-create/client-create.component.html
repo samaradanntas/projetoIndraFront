@@ -1,0 +1,39 @@
+<div class="card home shadow p-3 mb-5 bg-body rounded">
+    <div class="card-header">
+        Novo Cliente
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" [(ngModel)]="cliente.nome" name="nome">
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" [(ngModel)]="cliente.cpf" name="cpf">
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="telefone" [(ngModel)]="cliente.telefone" name="telefone">
+            </div>
+            <div class="mb-3">
+                <label for="rua" class="form-label">Rua</label>
+                <input type="text" class="form-control" id="rua" [(ngModel)]="cliente.rua" name="rua">
+            </div>
+            <div class="mb-3">
+                <label for="numero" class="form-label">Número</label>
+                <input type="text" class="form-control" id="numero" [(ngModel)]="cliente.numero" name="numero">
+            </div>
+            <div class="mb-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="cep" [(ngModel)]="cliente.cep" name="cep">
+            </div>
+            <div class="mb-3">
+                <label for="rendimentoMensal" class="form-label">Rendimento Mensal</label>
+                <input type="text" class="form-control" id="rendimentoMensal" [(ngModel)]="cliente.rendimentoMensal" name="rendimentoMensal">
+            </div>
+            <button class="btn btn-primary" (click)="createCliente()">Salvar</button>
+            <button class="btn btn-secondary" (click)="cancel()">Cancelar</button>
+        </form>
+    </div>
+</div>

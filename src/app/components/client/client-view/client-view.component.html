@@ -1,0 +1,25 @@
+<div class="card home">
+    <div class="card-header">
+        <h5 class="card-title">Cliente</h5>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" [(ngModel)]="cliente.nome" name="nome" disabled>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="text" class="form-control" id="telefone" [(ngModel)]="cliente.telefone" name="telefone" disabled>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control" id="cpf" [(ngModel)]="cliente.cpf" name="cpf" disabled>
+            </div>
+            <div class="form-group">
+                <label for="rendimentoMensal">Renda Mensal</label>
+                <input type="text" class="form-control" id="rendimentoMensal" [(ngModel)]="cliente.rendimentoMensal" name="rendimentoMensal" disabled>
+            </div>
+        </form>
+    </div>
+</div>
